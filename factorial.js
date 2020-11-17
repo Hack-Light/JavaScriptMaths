@@ -5,5 +5,13 @@ let factorial = n => {
   }
 };
 
+let factorial2 = n => {
+  for (let i = n - 1; i >= 1; i--) {
+    n = n * i;
+  }
+  return n;
+};
+
 let result = factorial(5);
-console.log(result);
+let result2 = factorial2(7);
+console.log(result2);
